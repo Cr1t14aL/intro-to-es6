@@ -1,2 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Online Keyboard</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+
+<div id="container">
+	<textarea id="write" rows="6" cols="60"></textarea>
+	<ul id="keyboard">
+		<li class="symbol"><span class="off" onclick="key('`')">`</span><span class="on" onclick="key('~')">~</span></li>
+		<li class="symbol"><span class="off" onclick="key('1')">1</span><span class="on" onclick="key('!')">!</span></li>
+		<li class="symbol"><span class="off" onclick="key('2')">2</span><span class="on" onclick="key('@')">@</span></li>
+		<li class="symbol"><span class="off" onclick="key('3')">3</span><span class="on" onclick="key('#')">#</span></li>
+		<li class="symbol"><span class="off" onclick="key('4')">4</span><span class="on" onclick="key('$')">$</span></li>
+		<li class="symbol"><span class="off" onclick="key('5')">5</span><span class="on" onclick="key('%')">%</span></li>
+		<li class="symbol"><span class="off" onclick="key('6')">6</span><span class="on" onclick="key('^')">^</span></li>
+		<li class="symbol"><span class="off" onclick="key('7')">7</span><span class="on" onclick="key('&amp;')">&amp;</span></li>
+		<li class="symbol"><span class="off" onclick="key('8')">8</span><span class="on" onclick="key('*')">*</span></li>
+		<li class="symbol"><span class="off" onclick="key('9')">9</span><span class="on" onclick="key('(')">(</span></li>
+		<li class="symbol"><span class="off" onclick="key('0')">0</span><span class="on" onclick="key(')')">)</span></li>
+		<li class="symbol"><span class="off" onclick="key('-')">-</span><span class="on" onclick="key('_')">_</span></li>
+		<li class="symbol"><span class="off" onclick="key('=')">=</span><span class="on" onclick="key('+')">+</span></li>
+		<li class="delete lastitem" onclick="del()">Delete</li>
+		<li class="tab" onclick="key('\t')">Tab</li>
+		<li class="letter"onclick="key('q')">q</li>
+		<li class="letter" onclick="key('w')">w</li>
+		<li class="letter" onclick="key('e')">e</li>
+		<li class="letter" onclick="key('r')">r</li>
+		<li class="letter" onclick="key('t')">t</li>
+		<li class="letter" onclick="key('y')">y</li>
+		<li class="letter" onclick="key('u')">u</li>
+		<li class="letter" onclick="key('i')">i</li>
+		<li class="letter" onclick="key('o')">o</li>
+		<li class="letter" onclick="key('p')">p</li>
+		<li class="symbol"><span class="off" onclick="key('[')">[</span><span class="on" onclick="key('{')">{</span></li>
+		<li class="symbol"><span class="off" onclick="key(']')">]</span><span class="on" onclick="key('}')">}</span></li>
+		<li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+		<li class="capslock" onclick="upperCase()">CapsLock</li>
+		<li class="letter" onclick="key('a')">a</li>
+		<li class="letter" onclick="key('s')">s</li>
+		<li class="letter" onclick="key('d')">d</li>
+		<li class="letter" onclick="key('f')">f</li>
+		<li class="letter" onclick="key('g')">g</li>
+		<li class="letter" onclick="key('h')">h</li>
+		<li class="letter" onclick="key('j')">j</li>
+		<li class="letter" onclick="key('k')">k</li>
+		<li class="letter" onclick="key('l')">l</li>
+		<li class="symbol"><span class="off" onclick="key(';')">;</span><span class="on" onclick="key(':')">:</span></li>
+		<li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+		<li class="return lastitem" onclick="key('\n')">Return</li>
+		<li class="left-shift" onclick="shift()">Shift</li>
+		<li class="letter" onclick="key('z')">z</li>
+		<li class="letter" onclick="key('x')">x</li>
+		<li class="letter" onclick="key('c')">c</li>
+		<li class="letter" onclick="key('v')">v</li>
+		<li class="letter" onclick="key('b')">b</li>
+		<li class="letter" onclick="key('n')">n</li>
+		<li class="letter" onclick="key('m')">m</li>
+		<li class="symbol"><span class="off" onclick="key(',')">,</span><span class="on">&lt;</span></li>
+		<li class="symbol"><span class="off" onclick="key('.')">.</span><span class="on">&gt;</span></li>
+		<li class="symbol"><span class="off" onclick="key('/')">/</span><span class="on" onclick="key('?')">?</span></li>
+		<li class="right-shift lastitem" onclick="shift()">Shift</li>
+		<li class="space lastitem" onclick="key('&nbsp;')">&nbsp;</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script src='build/main.bundle.js'></script>
-Hello world
+</body>
+</html>
